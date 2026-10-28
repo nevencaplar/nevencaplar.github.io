@@ -95,7 +95,7 @@
 
 							<footer>
 								<a href="#work" class="button scrolly">My projects</a>
-								<a href="https://lsdb.io" class="button alt">LSDB</a>
+								<a href="https://lsdb.io" class="button alt">HATS/LSDB</a>
 								<a href="https://github.com/nevencaplar/CV/blob/master/Caplar_Neven_Resume.pdf" class="button alt">CV</a>
 							</footer>
 
@@ -156,113 +156,120 @@
 
 						<div class="container">
 
-
-
 							<header>
-
 								<h2>Projects</h2>
-
 							</header>
 
+							<p class="overview-link"><a href="#overview">Map of the HATS and LSDB ecosystem: how survey data flows from telescopes to science &rarr;</a></p>
 
 
-							<p style="font-size:100%;"></p>
+							<div class="cards">
 
-							<div class="row">
+								<div class="card">
+									<a href="images/rubin_dp2_gaia_xmatch.png" class="card-image"><img src="images/rubin_dp2_gaia_xmatch.png" alt="Sky map of matches between Rubin DP2 and Gaia" title="Crossmatch of Rubin Data Preview 2 with Gaia, computed with LSDB" /></a>
+									<p class="card-tag">Current &middot; LINCC Frameworks</p>
+									<h3>HATS and LSDB</h3>
+									<p>
+										I am the project owner and chief scientist for <span style="font-weight:bold">HATS and LSDB - an open-source, survey-agnostic format and toolkit for scalable analysis of large catalogs</span>.
+										They are used for data from many large surveys, such as Gaia and Rubin, with Euclid and Roman coming next.
+										With LSDB, <span style="font-weight:bold">crossmatching all of Rubin DP2 with Gaia, a billion-row catalog against a billion-row catalog, takes under 3 minutes</span>.
+										The project is a part of LINCC Frameworks - a team developing state-of-the-art analysis software capable of meeting the scale and complexity of data from large survey telescopes.
+									</p>
+									<p class="card-links">
+										<a href="https://lsdb.io">Documentation</a> &middot;
+										<a href="https://github.com/astronomy-commons/lsdb">GitHub</a> &middot;
+										<a href="https://data.lsdb.io">Catalogs</a> &middot;
+										<a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250102103C">Paper</a> &middot;
+										<a href="#overview">Overview map</a>
+									</p>
+									<p class="card-credit">Figure: number of Gaia FGK stars matched to Rubin DP2 objects per square degree, computed with LSDB.</p>
+								</div>
 
-							<div class="6u">
+								<div class="card">
+									<a href="images/multimodal_universe.png" class="card-image"><img src="images/multimodal_universe.png" alt="Examples of astronomical images, time series and spectra" title="Images, time series and spectra in the Multimodal Universe dataset" /></a>
+									<p class="card-tag">Current &middot; LINCC Frameworks</p>
+									<h3>Multimodal data for AI (DOE Genesis Mission)</h3>
+									<p>
+										Together with Carnegie Mellon University and SLAC, we are extending HATS and LSDB beyond catalogs to
+										<span style="font-weight:bold">images, spectra and time series</span>, so that data from many surveys can be accessed together and streamed directly into the training of AI models.
+									</p>
+									<p class="card-links">
+										<a href="https://www.washington.edu/news/2026/07/22/ai-cosmology-genesis-mission/">UW News</a>
+									</p>
+									<p class="card-credit">Figure adapted from <a href="https://arxiv.org/abs/2412.02527">The Multimodal Universe</a> (CC BY 4.0).</p>
+								</div>
 
-								<a href="images/GAIA_HATS.png" class="image resize" data-lightbox="" data-title=""><img src="images/GAIA_HATS.png" alt="Sky map of Gaia DR3 partitioned with HATS" title="Example of spatial sharding of GAIA data" /></a>
+								<div class="card">
+									<a href="images/rubin_hats_diagram.svg" class="card-image"><img src="images/rubin_hats_diagram.svg" alt="Diagram of Rubin data products available in HATS and in progress" /></a>
+									<p class="card-tag">Current &middot; LINCC Frameworks</p>
+									<h3>Rubin data in HATS</h3>
+									<p>
+										Now I am working on <span style="font-weight:bold">bringing Rubin Observatory data into HATS</span>.
+										The DP1 and DP2 data previews and the public alert archive are already available in HATS format; the Prompt Products Database and light curves from prompt processing are in progress.
+										Before that, until October 2025, I worked on commissioning the Rubin Observatory, improving difference imaging, lightcurve construction and photometric performance.
+									</p>
+									<p class="card-links">
+										<a href="https://data.lsdb.io/hats/rubin_alert_archive">Alert archive</a> &middot;
+										<a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250623955M">DP1 variability paper</a> &middot;
+										<a href="https://github.com/lsst-sitcom/linccf">LSDB for Rubin data</a>
+									</p>
+								</div>
 
-								<p style="font-size:100%;"> <a href="https://lsdb.io"> LSDB homepage</a>
-								<br>
-								<br>
-								I am the project owner and chief scientist for <span style="font-weight:bold">HATS and LSDB - an open-source, survey-agnostic format and toolkit for scalable analysis of large catalogs</span>.
-								They are used for data from many large surveys, such as Gaia and Rubin, with Euclid and Roman coming next.
-								The project is a part of LINCC Frameworks -
-								a team developing state-of-the-art analysis software capable of meeting the scale and complexity of data from large survey telescopes.
-								</p>
-
-							</div>
-
-
-							<div class="6u">
-
-								<a href="images/Rubin.jpg" class="image resize" data-lightbox="" data-title=""><img src="images/Rubin.jpg" alt="Vera C. Rubin Observatory logo" title="Vera C. Rubin Observatory" /></a>
-
-								<p style="font-size:100%;"> <a href="https://github.com/lsst-sitcom/linccf"> LSDB repo for working with Rubin data</a>
-								<br>
-								<br>
-									Until October 2025 I was also working on <span style="font-weight:bold">commissioning the Rubin Observatory</span>, which observed its first photons with LSSTCam in April 2025.
-									I worked on improving the quality of difference imaging, lightcurve construction and photometric performance. 
-								</p>
-
-							</div>
-
-
-							<div class="6u">
-								<a href="images/web3.png" class="image resize" data-lightbox="image-1" data-title=""><img src="images/web3.png" alt="Model, data and residuals from fitting defocused PFS images" title="Example of the result of the fitting of the defocused images. In top left we can see the model, and the data shown are shown the top right panel. In bottom left panel we see the residual, and in the bottom right panel we see the residuals normalized by sqrt(variance), i.e., the chi-map. Dashed line indicate the size of the fiber trace when image is in the focus." /></a>
-								<p style="font-size:100%;"><a href="images/2DPipeline_PSF_2022_Neven_Caplar_Montreal.pdf"> Poster presented during the Society of Photo-Optical Instrumentation Engineers meeting in July 2022 </a>
-								<br>
-								<br>
-								Previously (2017 - 2022, Princeton University), my main effort was concentrated on the <span style="font-weight:bold">2d data pipeline for processing spectra taken by the Prime Focus Spectrograph</span>, now operating on the Subaru Telescope.
-								The aim of the project was to model the point spread function from defocused images to achieve high-quality subtraction of the skylines.
-								<br>
-							</div>
-
-							<div class="6u">
-								<a href="images/comparison_observations.png" class="image fit" data-lightbox="" data-title=""><img src="images/comparison_observations.png" alt="Width of the galaxy main sequence measured with different star-formation indicators" title="By combining measurements of the width of the Main Sequence of galaxies with different indicators (here Alpha, UV+IR and u-band), we can place constraints on the properties of the time evolution of galaxies." /></a>
-								<p style="font-size:100%;"> <a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.487.3845C/abstract"> N. Caplar & S. Tacchella,  2019 MNRAS</a>
-								<br>
-								<br>
-								One of my favorite past projects has been investigating the time evolution of galaxies. Together with Sandro Tacchella
-									we have been successful in <span style="font-weight:bold">modeling the star formation histories of galaxies as a stochastic process</span>. 
-									When comparing with the data, we found that galaxies become decorrelated, i.e., lose the memory of their previous star-formation, on the scale of roughly 200 Myr. 
-								<br>
-								<br>
-								<br>	
-								<br>	
-								</p>
-
-							</div>
-
-
-
-							<div class="6u">
-
-								<a href="images/web2.png" class="image fit" data-lightbox="image-2" data-title=""><img src="images/web2.png" alt="Light curve of an AGN from the Palomar Transient Factory" title="Typical light curve of an AGN from the Palomar Transient Factory Survey. The variability is deeply connected with physical properties of the accreting disk in the AGN." /></a>
-								<p style="font-size:100%;"> <a href="http://adsabs.harvard.edu/abs/2017ApJ...834..111C"> N. Caplar, S. J. Lilly, B. Trakhtenbrot, 2017 ApJ </a>
-								<br>
-								<br>
-								I have been particularly interested in time-domain astronomy for a long time. My first project was the study analyzing <span style="font-weight:bold">optical time variability of AGN</span> in Palomar Transient Factory Survey.
-								We have analyzed 28000 AGN with 2.4 million data points.
-								After full recalibration of the survey, we have characterized the global properties of AGN variability (e.g., we see that more luminous AGN are less variable) and also discovered an interesting steepening of the power spectral distribution for more massive objects. 
-								<br>
-								<br>									
-								<br>
-								<br>	
-								<br>
-								<br>
-								<br>
-							</p>
-							</div>
-
-
-							<div class="6u">
-								<a href="images/web5.png" class="image resize1" data-lightbox="image-5" data-title=""><img src="images/web5.png" alt="Citations of papers by women relative to predicted citations" title="Measured number of citations for the papers written by women, divided by the number of citation predicted given the properties of their papers. This analysis was done using the random forest algorithm trained on the sample of papers written by men. " /></a>
-								<p style="font-size:100%;"> <a href="https://www.nature.com/articles/s41550-017-0141"> N. Caplar, S. Tacchella, S. Birrer, 2017 NatAst </a>
-								<br>
-								<br>
-								I also have a paper that <span style="font-weight:bold">quantified the gender bias in astronomy</span>. 
-								We have analyzed over 200000 papers from the field of astronomy and used machine learning techniques to estimate the difference in the number of citations between papers written by men and women. 
-								We find that women receive around 10% less citations than what would be expected if the same papers were written by men.
-								<br>
-								<br>
-								<br> 
-							</div>
-
+								<div class="card">
+									<a href="images/web3.png" class="card-image"><img src="images/web3.png" alt="Model, data and residuals from fitting defocused PFS images" title="Example of the result of the fitting of the defocused images. In top left we can see the model, and the data shown are shown the top right panel. In bottom left panel we see the residual, and in the bottom right panel we see the residuals normalized by sqrt(variance), i.e., the chi-map. Dashed line indicate the size of the fiber trace when image is in the focus." /></a>
+									<p class="card-tag">2017 - 2022 &middot; Princeton University</p>
+									<h3>Prime Focus Spectrograph</h3>
+									<p>
+										My main effort was the <span style="font-weight:bold">2d data pipeline for processing spectra taken by the Prime Focus Spectrograph</span>, now operating on the Subaru Telescope.
+										The aim of the project was to model the point spread function from defocused images to achieve high-quality subtraction of the skylines.
+									</p>
+									<p class="card-links">
+										<a href="images/2DPipeline_PSF_2022_Neven_Caplar_Montreal.pdf">SPIE 2022 poster</a>
+									</p>
+								</div>
 
 							</div>
+
+							<h3 class="research-heading">Selected earlier research</h3>
+
+							<ul class="research">
+								<li>
+									<a href="images/comparison_observations.png"><img src="images/comparison_observations.png" alt="Width of the galaxy main sequence measured with different star-formation indicators" /></a>
+									<div>
+										<span style="font-weight:bold">Star formation histories of galaxies as a stochastic process.</span>
+										With Sandro Tacchella we found that galaxies lose the memory of their previous star formation on a scale of roughly 200 Myr.
+										<a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.487.3845C/abstract">Caplar &amp; Tacchella 2019, MNRAS</a>
+									</div>
+								</li>
+								<li>
+									<a href="images/web1.png"><img src="images/web1.png" alt="Mass-luminosity plane for AGN from the Sloan Digital Sky Survey" /></a>
+									<div>
+										<span style="font-weight:bold">Galaxy-black hole co-evolution.</span>
+										A phenomenological model that explains the quasar luminosity function and the evolution of Eddington ratios; the black hole-stellar mass ratio was around ten times larger at redshift 2 than today.
+										<a href="https://ui.adsabs.harvard.edu/abs/2018arXiv181004170C">Caplar, Lilly &amp; Trakhtenbrot 2018, ApJ</a>
+									</div>
+								</li>
+								<li>
+									<a href="images/web2.png"><img src="images/web2.png" alt="Light curve of an AGN from the Palomar Transient Factory" /></a>
+									<div>
+										<span style="font-weight:bold">Optical variability of AGN.</span>
+										28,000 AGN with 2.4 million data points from the Palomar Transient Factory: more luminous AGN are less variable, and the power spectrum steepens for more massive objects.
+										<a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...834..111C">Caplar, Lilly &amp; Trakhtenbrot 2017, ApJ</a>
+									</div>
+								</li>
+								<li>
+									<a href="images/web5.png"><img src="images/web5.png" alt="Citations of papers by women relative to predicted citations" /></a>
+									<div>
+										<span style="font-weight:bold">Gender bias in astronomy citations.</span>
+										Using machine learning on over 200,000 papers, we found that papers written by women receive around 10% fewer citations than expected.
+										<a href="https://www.nature.com/articles/s41550-017-0141">Caplar, Tacchella &amp; Birrer 2017, Nature Astronomy</a>
+									</div>
+								</li>
+							</ul>
+
+							<p class="research-more"><a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Caplar%2C%20Neven%22&amp;sort=date%20desc">Full publication list on ADS</a></p>
+
+						</div>
 					</section>
 
 				<!-- Contact -->
@@ -306,6 +313,16 @@
 
 			</div>
 
+		<!-- Overview map panel -->
+			<div id="overview" class="overlay">
+				<div class="overlay-panel">
+					<a href="#work" class="overlay-close" aria-label="Close">&times;</a>
+					<h3>HATS and LSDB, from surveys to science</h3>
+					<img src="images/hats_subway_map.png" alt="Map of how HATS and LSDB connect survey data sources, access points and science applications" />
+					<p>Data sources on the left are imported into HATS; LSDB and data.lsdb.io provide access in the middle; science applications are on the right.</p>
+				</div>
+			</div>
+
 		<!-- Footer -->
 			<div id="footer">
 
@@ -323,45 +340,3 @@
 
 	</body>
 </html>
-
-
-								<!-- <div class="6u">
-
-									<a href="images/web6.png" class="image fit" data-lightbox="image-6" data-title=""><img src="images/web6.png" alt="" /></a>
-
-									<p style="font-size:80%;"> <a href="http://adsabs.harvard.edu/abs/2013PhRvD..87b3510C"> N. Caplar, H. Stefancic, 2013PhRvD</a>
-
-									<br>
-
-									During my Masters at University of Zagreb I worked in the field of cosmology. I worked on the Chaplygin gas type models and we showed how some of the constrains on the parametrizations of Chaplygin gas type models can be relaxed with the suitable choices of the functional form for speed of sound in these models.
-									<br>
-									<br><br><br>
-									</p>
-
-								</div>-->
-
-								<!--div class="6u">
-									<a href="images/web4.jpeg" class="image fit" data-lightbox="image-4" data-title=""><img src="images/web4.jpeg" alt="" title="Number of votes on the popular astrophysical website VoxCharta, as a function of the position on the arXiv listing for that day. Papers higher on the list receive more votes. Is that because they are higher quality or...?"/></a>
-									<p style="font-size:100%;"> <a href="http://astrodataiscool.com"> astrodataiscool webpage  </a>
-									<br>
-									<br>
-									I often like to play with various datasets, and I publish these results on a dedicated website. I enjoy <span style="font-weight:bold">exploring both astronomical and popular data sources</span>.
-                                    I do not update the website anymore, but some previous examples include predicting winners of Eurovision from twitter data, measuring how quickly astronomy papers are submitted to arXiv, visualizing the density of chat responses on Twitch during big events, etc... 
-                                    On a related note, my first publication was a conference proceeding  <a href="https://arxiv.org/abs/1305.5189">  (see here) </a> in which we investigated the correlation of player metrics and the rating of players in a popular online multiplayer game.
-									<br>
-									</p>
-								</div>-->
-
-								<!--div class="6u">
-
-									<a href="images/web1.png" class="image resize1" data-lightbox="image-3" data-title=""><img src="images/web1.png" alt="" title="Mass-luminosity plane for AGN from the Sloan Digital Sky Survey. Top panel shows our reproduction of the data that are shown in the bottom panel. In order to achieve this agreement, we have shown there must be evolution in typical black hole-galaxy mass with redshift." /></a>
-									<p style="font-size:100%;"> <a href="http://adsabs.harvard.edu/abs/2018arXiv181004170C">  N. Caplar, S. J. Lilly, B. Trakhtenbrot, 2018 ApJ </a>
-									<br>
-									<br>
-									Large part of my Ph.D. was on <span style="font-weight:bold">galaxy-black hole co-evolution</span>. 
-									I developed a phenomenological model which successfully explains many observations, such as quasar luminosity function, the evolution of Eddington ratio etc...
-									One of the most exciting results was that the black hole-stellar ratio was around ten times larger at redshift 2 than today!
-									<br>
-	
-	
-								</div-->
